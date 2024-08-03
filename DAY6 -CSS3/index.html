@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        .parent p{ /* descendent */
+            color: red; 
+        }
+        .parent > h1{  /* child */
+            color: gold;
+            /* background: #000; */
+        }
+        div ~ p{
+            background: blue;
+        }
+        div.child:hover{
+            background: lawngreen;
+        }
+        .tooltip{
+            border: 2px solid red; 
+            display: block;
+            position: relative; 
+            padding: 44px 10px 10px ;
+            
+
+        }
+        .tip{
+            position: absolute;
+            left: 10px;
+            top: 0;
+            background: gray;
+            padding: 2px 4px;
+            display: none;
+
+
+        }
+         .tooltip:hover .tip{
+            display: block;
+
+        }
+        ul > li:nth-child(even){
+            color: blueviolet;
+            font-size: 24px; 
+        }
+        .sdelt::first-letter{
+            color: brown;
+            font-size: 32px; 
+        }
+        .sdelt::first-line{
+            color: blue;
+            font-weight: bold; 
+        }
+        .sdelt::before{
+            content: url(./code.jpg); 
+        }
+        ::maker{
+            color:green;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1> page title</h1>
+        <p> blog page </p>
+        <div class="child">
+            <div> 
+                <h1>WELCOME</h1>
+            </div>
+            <h1>blog title</h1>
+            <p>12$</p>
+        </div>
+
+    </div>
+
+    <div class="tooltip">
+        <button> hover me </button>
+        <p class="tip"> click to go on net line</p>
+    </div>
+    <ul>
+        <li>hello </li>
+        <li>hello </li>
+        <li>hello </li>
+        <li>hello </li>
+    </ul>
+    <ul>
+        <li>hello </li>
+        <li>hello </li>
+        <li>hello </li>
+        <li>hello </li>
+    </ul>
+    <p>&copy; 2024</p>
+    <div class="sdelt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio totam assumenda soluta impedit nobis deleniti perferendis veniam similique incidunt error?
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      .parent {
+        width: 400px;
+        height: 400px;
+        border: 2px solid tomato;
+        position: relative;
+        z-index: -10; 
+      }
+      .child {
+        width: 200px;
+        height: 150px;
+        background: rgb(0, 128, 0); 
+        margin: auto;
+        z-index: 1; 
+
+      }
+      .nav {
+        background: gray;
+        padding: 4px 6px;
+        /* position: sticky; */
+        /* top: 0;  */
+      }
+      .text{
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div>contact: +250449</div>
+    <div class="nav">
+      <h1>WELCOME TO OUR PAGE please stay here</h1>
+    </div>
+    <div class="parent">
+    
+      <div class="child"></div>
+    </div>
+    <div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea molestiae
+      iure, nesciunt odit harum impedit sint beatae illum nostrum velit eligendi
+      quo dignissimos iste non, hic quae, vel delectus veniam quas. Molestias
+      eos aliquid ea distinctio in, maxime possimus numquam nihil dolorum ipsam
+      modi exercitationem ex ab nesciunt vel perspiciatis, iure vero,
+      repellendus iste. Cumque qui, iusto in excepturi sequi recusandae maiores
+      molestias itaque earum facere corrupti aut numquam accusamus repellat
+      sunt, doloremque aliquam odit aspernatur, non magni praesentium corporis
+      eum libero beatae! Saepe sed quas error voluptatum odio atque delectus,
+      corrupti temporibus neque perferendis dolor fuga veritatis a officiis.
+    </div>
+  </body>
+</html>

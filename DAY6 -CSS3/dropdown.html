@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down </title>
+    <style>
+        .content{
+            border: 2px solid red;
+            width: fit-content;
+        }
+        .content p{
+            background: rgb(5, 47, 5);
+            color: wheat;
+            font-weight: bold;
+            font-size: 24px;
+            width: 150px;
+        }
+        .drop-cont{
+            background: white;
+        }
+        .drop-cont li{
+            list-style-type: none;
+            font-weight: bold;
+            font-size: 24px;
+            width: 150px;
+        }
+        .drop-cont li:hover{
+            background: blue;
+            color: wheat;
+            width: 150px; 
+        }
+        .drop-cont{
+            display: none;
+        }
+        .content:hover .drop-cont{
+            display: block;
+        }
+        input[type="text"]{
+            border: 2px solid turquoise;
+        }
+
+    </style>
+
+<body>
+    
+    <div class="content">
+        <p>drop down</p>
+        <ul class="drop-cont">
+            <li>LINK</li>
+            <li>LINK</li>
+            <li>LINK</li>
+        </ul>
+    </div>
+    <input type="text">
+    <input type="button" value="submit">
+</body>
+</html>

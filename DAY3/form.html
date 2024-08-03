@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>form</h2>
+    <form action="" method="get" autocomplete="on" novalidate>
+      <input type="text" name="name"  size="20" maxlength="2" required/> <br />
+      <label for="gender"> choose gender</label> <br />
+      male <input type="radio" name="gender" id="male" /> female
+      <input type="radio" name="gender" id="malefe" />
+
+      <br />
+      <input type="checkbox" name="" id="" />
+      <input type="date" name="" id="" />
+      <input type="button" value="button" />
+      <input type="email" name="" id="" />
+      <input type="number" name="" id="" />
+      <!-- <input type="file"> -->
+      <input type="color" />
+      <input type="submit" value="send" />
+
+      <!-- SELECT  -->
+      <select name="" id="" size="1" multiple>
+        <option value="">Rwanda</option>
+        <option value="">Burundi</option>
+        <option value="" selected>tanzania</option>
+      </select>
+
+      <!-- TEXT AREA  -->
+      <textarea name="" id="" cols="16" rows="12"></textarea>
+
+      <!-- buttton  -->
+      <button>Button</button>
+      <fieldset>
+        <legend>user data</legend>
+        name: <input type="text" name="" id="" disabled /> <br />
+        <br />
+        age: <input type="number" name="" id=""  value="15" readonly />
+      </fieldset>
+      <!-- data list  -->
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+    </datalist>
+    <input type="hidden" name="" id=""> <br>
+    password <input type="password" name="" id="" multiple>
+    <input type="range">
+    <input type="search"> <br>
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code"
+    pattern="[A-Za-z]{3}" title="Three letter country code">
+    </form>
+    <form action="">
+        <input type="text" name="" id=""  required> <br>
+        <label for="points">Points:</label>
+  <input type="number" id="points" name="points" step="10" autofocus> 
+        <input type="submit">
+    </form>
+  </body>
+</html>
